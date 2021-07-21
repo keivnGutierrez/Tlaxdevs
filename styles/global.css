@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title {
+  color: aqua;
+  font-family: "Sedgwick Ave Display", cursive;
+  /* font-family: 'Josefin Sans'; */
+}
+
+.text-logo {
+  color: #ff5572 !important;
+  font-family: "Sedgwick Ave Display", cursive;
+  margin: 0;
+}
+.text-logo-green {
+  color: #a3d85d;
+  font-family: "Sedgwick Ave Display", cursive;
+  margin: 0;
+}
+
+.text-footer {
+  font-size: 10px;
+  margin: 0;
+  margin-top: 10px;
+}
+.proyects-list {
+  display: flex;
+  /* background-color: red; */
+  width: 95vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 90px;
+  max-height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* opacity: .8; */
+  color: white;
+  background-color: #222a4c;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.m-a {
+  margin: auto;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+/* loading */
+.lds-ripple {
+  margin: auto;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
