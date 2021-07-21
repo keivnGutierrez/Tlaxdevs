@@ -41,7 +41,7 @@ export default function Cotizaciones() {
             </Head>
             <Navbar></Navbar>
             {loading && (
-                <div style={{ position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
+                <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
                     <Loading />
                 </div>
             )}

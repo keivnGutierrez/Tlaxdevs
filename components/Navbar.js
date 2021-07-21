@@ -44,6 +44,7 @@ export default function Navbar() {
             <style jsx>{`
                 nav{
                     position:fixed;
+                    z-index:3;
                     width:100vw;
                     display:flex;
                     justify-content:space-between;

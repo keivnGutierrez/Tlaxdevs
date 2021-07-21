@@ -16,8 +16,10 @@ export default function ItemProyect({
     return (
         <>
             <div className='main'>
-                <img className="img" src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" ></img>
-
+                {/* <img className="img"  ></img> */}
+                <div style={{margin:'auto'}}>
+                    <Image src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" width={200} height={200} />
+                </div>
                 <div className='content'>
                     <div className='paragraphs'>
                         <p>{text.one}</p>
