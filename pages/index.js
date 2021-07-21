@@ -75,8 +75,8 @@ export default function Home() {
             </p>
           </article>
           <aside >
-            <Image src="/mackCode.svg" alt="Mack Home WEb" width={'40%'} />
-            <Image src="/mackInfo.svg" alt="Mack Home WEb" width={'60%'} />
+            <img src="/mackCode.svg" alt="Mack Home WEb" style={{ width: '40%' }} />
+            <img src="/mackInfo.svg" alt="Mack Home WEb" style={{ width: '40%' }} />
 
           </aside>
         </main>
@@ -93,7 +93,7 @@ export default function Home() {
           </article>
           <aside>
             {/* <Image src="/mackTo.svg" className="m-a" alt="Mack Home WEb" width={190} height={190} /> */}
-            <Image src="/movil.svg" className="m-a" alt="Mack Home WEb" width={220} />
+            <img src="/movil.svg" className="m-a" alt="Mack Home WEb" style={{ width: 220 }} />
           </aside>
         </div>
       </div>
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
           </article>
           <aside>
-            <Image src="/compu.svg" className="m-a" alt="Mack Home WEb" width={300} />
+            <img src="/compu.svg" className="m-a" alt="Mack Home WEb" style={{ width: 300 }} />
           </aside>
         </main>
       </div>

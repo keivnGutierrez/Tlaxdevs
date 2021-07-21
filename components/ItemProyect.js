@@ -16,7 +16,7 @@ export default function ItemProyect({
     return (
         <>
             <div className='main'>
-                <Image className="img" src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" />
+                <img className="img" src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" ></img>
 
                 <div className='content'>
                     <div className='paragraphs'>

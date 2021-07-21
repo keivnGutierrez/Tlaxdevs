@@ -99,7 +99,6 @@ export default function Portafolio() {
                             }}
                             isprivate={true}
                             img=""
-                            isprivate={true}
                         />
                         
                         <ItemProyect
@@ -110,7 +109,6 @@ export default function Portafolio() {
                             }}
                             isprivate={true}
                             img=""
-                            isprivate={true}
                         />
                         
 
