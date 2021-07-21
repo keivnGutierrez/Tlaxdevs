@@ -1,5 +1,9 @@
-import React from 'react'
+
 import Btn from '../components/Btn';
+
+import Image from 'next/image'
+
+
 export default function ItemProyect({
     href = '',
     text = {
@@ -12,7 +16,7 @@ export default function ItemProyect({
     return (
         <>
             <div className='main'>
-                <img src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" />
+                <Image className="img" src={isprivate ? '/private.svg' : img} alt="Mack Home WEb" />
 
                 <div className='content'>
                     <div className='paragraphs'>

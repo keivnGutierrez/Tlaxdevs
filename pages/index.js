@@ -9,6 +9,8 @@ import Footer from '../components/Footer'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
+import Image from 'next/image'
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -56,7 +58,7 @@ export default function Home() {
             <code className={styles.code}>Hello/World</code>
           </p>
 
-          <img src="/mackHome.svg" alt="Mack Home WEb" width={280} height={280} />
+          <Image src="/mackHome.svg" alt="Mack Home WEb" width={280} height={280} />
         </main>
       </div>
       <div className={styles.containerWhite}>
@@ -73,8 +75,8 @@ export default function Home() {
             </p>
           </article>
           <aside >
-            <img src="/mackCode.svg" alt="Mack Home WEb" width={'40%'} />
-            <img src="/mackInfo.svg" alt="Mack Home WEb" width={'60%'} />
+            <Image src="/mackCode.svg" alt="Mack Home WEb" width={'40%'} />
+            <Image src="/mackInfo.svg" alt="Mack Home WEb" width={'60%'} />
 
           </aside>
         </main>
@@ -90,8 +92,8 @@ export default function Home() {
             <FromSuscribe></FromSuscribe>
           </article>
           <aside>
-            {/* <img src="/mackTo.svg" className="m-a" alt="Mack Home WEb" width={190} height={190} /> */}
-            <img src="/movil.svg" className="m-a" alt="Mack Home WEb" width={220} />
+            {/* <Image src="/mackTo.svg" className="m-a" alt="Mack Home WEb" width={190} height={190} /> */}
+            <Image src="/movil.svg" className="m-a" alt="Mack Home WEb" width={220} />
           </aside>
         </div>
       </div>
@@ -159,7 +161,7 @@ export default function Home() {
             </div>
           </article>
           <aside>
-            <img src="/compu.svg" className="m-a" alt="Mack Home WEb" width={300} />
+            <Image src="/compu.svg" className="m-a" alt="Mack Home WEb" width={300} />
           </aside>
         </main>
       </div>
