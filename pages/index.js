@@ -46,7 +46,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       {loading && (
-        <div style={{ zIndex:'3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
+        <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
           <Loading />
         </div>
       )}
@@ -58,7 +58,7 @@ export default function Home() {
             <code className={styles.code}>Hello/World</code>
           </p>
 
-          <Image src="/mackHome.svg" alt="Mack Home WEb" width={280} height={280} />
+          <Image src="/web.svg" alt="Mack Home WEb" width={350} height={350} />
         </main>
       </div>
       <div className={styles.containerWhite}>
@@ -75,8 +75,11 @@ export default function Home() {
             </p>
           </article>
           <aside >
-            <Image src="/mackCode.svg" alt="Mack Home WEb" width={300} height={200} />
-            <Image src="/mackInfo.svg" alt="Mack Home WEb" width={300} height={200} />
+            <div>
+              <Image src="/console.svg" alt="Mack Home WEb" width={250} height={180} />
+              <Image src="/consolegrey.svg" alt="Mack Home WEb" width={170} height={130} />
+            </div>
+            <Image src="/desktop.svg" alt="Mack Home WEb" width={500} height={500} />
 
           </aside>
         </main>
@@ -93,8 +96,7 @@ export default function Home() {
           </article>
           <aside>
             <div style={{ margin: 'auto' }}>
-
-              <Image src="/movil.svg" className="m-a" alt="Mack Home WEb" width={240} height={300} />
+              <Image src="/movil.svg" className="m-a" alt="Mack Home WEb" width={400} height={400} />
             </div>
           </aside>
         </div>
