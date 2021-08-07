@@ -45,7 +45,7 @@ export default function Portafolio() {
             </Head>
             <Navbar></Navbar>
             {loading && (
-                <div style={{ zIndex:'3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
+                <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
                     <Loading />
                 </div>
             )}
@@ -80,6 +80,14 @@ export default function Portafolio() {
                             }}
                             img="/ztiluzapp.svg"
                         />
+                        <ItemProyect
+                            href='https://tlaxdevs.com'
+                            text={{
+                                one: 'Pagina web de Tlaxdevs',
+                                two: 'Echa con ReactJS'
+                            }}
+                            img="/tlaxdev.svg"
+                        />
 
                         <ItemProyect
                             href=''
@@ -90,7 +98,8 @@ export default function Portafolio() {
                             img=""
                             isprivate={true}
                         />
-                        
+
+
                         <ItemProyect
                             href=''
                             text={{
@@ -100,7 +109,7 @@ export default function Portafolio() {
                             isprivate={true}
                             img=""
                         />
-                        
+
                         <ItemProyect
                             href=''
                             text={{
@@ -110,7 +119,7 @@ export default function Portafolio() {
                             isprivate={true}
                             img=""
                         />
-                        
+
 
                     </div>
                     <div style={{ display: 'flex', marginTop: '50px' }}>

@@ -75,11 +75,11 @@ export default function Home() {
             </p>
           </article>
           <aside >
-            <div>
+            {/* <div> */}
               <Image src="/console.svg" alt="Mack Home WEb" width={250} height={180} />
               <Image src="/consolegrey.svg" alt="Mack Home WEb" width={170} height={130} />
-            </div>
-            <Image src="/desktop.svg" alt="Mack Home WEb" width={500} height={500} />
+            {/* </div> */}
+            {/* <Image src="/desktop.svg" alt="Mack Home WEb" width={500} height={500} /> */}
 
           </aside>
         </main>
