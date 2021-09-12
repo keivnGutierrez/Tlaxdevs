@@ -17,7 +17,7 @@ export default function Cotizaciones() {
                 <meta name="description" content="Solicita una contización para tu proyecto, las mojeres tecnologías, la mejor experienciencia de usuario y buenas practicas en codigo" />
                 <link rel="icon" href="/favicon.svg" />
                 <link rel="apple-touch-icon" href="/favicon.svg" />
-
+                <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, width=device-width, height=device-height" />
                 <meta
                     name="keywords"
                     content=" TLaxcala, Tlaxdevs, software, desarrollo web, desarrollo movil,precios,we precios,cotizaciones, react, nexjs, web, movil, android, developer, porfolio, portafolio, proyectos, informatica, webs"
