@@ -11,20 +11,7 @@ import { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
 import Image from 'next/image'
 
-
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const tiem = setTimeout(() => {
-      setLoading(false)
-    }, 500);
-    return () => {
-      clearTimeout(tiem)
-    }
-  }, [])
-
-
   return (
 
     <>
@@ -45,42 +32,33 @@ export default function Home() {
 
       </Head>
       <Navbar></Navbar>
-      {loading && (
-        <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
-          <Loading />
-        </div>
-      )}
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1 className={styles.title}> ¡Bienbenido a <span>Digital solutions <span className="text-logo">Tlaxdevs !</span> </span> </h1>
+          <h1 className={styles.title}> ¡Bienvenido a  <span>Digital solutions <span className="text-logo">Tlaxdevs !</span> </span> </h1>
           <p className={styles.description}>
-            ¿Listo para inciar tu proyecto?{' '}
+            ¿Listo para iniciar tu proyecto?{' '}
             <code className={styles.code}>Hello/World</code>
           </p>
-
-          <Image src="/web.svg" alt="Mack Home WEb" width={350} height={350} />
+          <Image src="/web.svg" alt="Mack Home WEb" width={250} height={250} />
         </main>
       </div>
       <div className={styles.containerWhite}>
         <main className={styles.mainInfo}>
           <article className="mb-40">
-            <h1 className={styles.titleInfo}>Profesionaliza tu negocio...</h1>
+            <h1 className={styles.titleInfo}>Profesionaliza tu negocio ...</h1>
             <p className={styles.paragraphInfo} >Nosotros desarrollamos tu <span>proyecto.</span> </p>
             <p className={styles.paragraphInfo}>
-              Tenemos años de experincia que nos respandal.
-              nos mantenemos a la vanguardia de las ultimas tecnologías para desarrollar productos <span>rapidos, efecientes y viusalmente atractivos.</span>
+              Tenemos años de experiencia que nos respalda.
+              nos mantenemos a la vanguardia de las últimas tecnologías para desarrollar productos <span>rápidos, eficientes y visualmente atractivos.</span>
             </p>
             <p className={styles.paragraphInfo}>
-              Obten el mejor servicio, las mejores tecnologías <span>¿Te atreves a trabajar con nostros?</span>
+              Obtén  el mejor servicio, las mejores tecnologías <span>¿Te atreves a trabajar con nosotros?</span>
             </p>
           </article>
           <aside >
-            {/* <div> */}
-              <Image src="/console.svg" alt="Mack Home WEb" width={250} height={180} />
-              <Image src="/consolegrey.svg" alt="Mack Home WEb" width={170} height={130} />
-            {/* </div> */}
-            {/* <Image src="/desktop.svg" alt="Mack Home WEb" width={500} height={500} /> */}
-
+            <div style={{ margin: 'auto' }}>
+              <Image src="/console.svg" alt="Mack Home WEb" width={250} height={200} />
+            </div>
           </aside>
         </main>
       </div>
@@ -89,9 +67,9 @@ export default function Home() {
           <article>
             <h1 className={styles.titleInfoWhite}>Software de calidad</h1>
             <p className={styles.paragraphInfoWhite}>
-              Obten el mejor servicio, las mejores tecnologías <span>¿Te atreves a trabajar con nostros?</span>
+              Obtén el mejor servicio, las mejores tecnologías <span>¿Te atreves a trabajar con nosotros?</span>
             </p>
-            <h3 className={styles.subTitleInfoWhite}>Recibe promociones exclucivas</h3>
+            <h3 className={styles.subTitleInfoWhite}>Recibe promociones exclusivas</h3>
             <FromSuscribe></FromSuscribe>
           </article>
           <aside>
@@ -108,7 +86,6 @@ export default function Home() {
             <p className={styles.paragraphInfo}>
               <span>
                 Estamos a la vanguardia en cuanto tecnologías:
-
               </span>
             </p>
             <p className={styles.paragraphInfo + " ml-20"}>
@@ -139,9 +116,9 @@ export default function Home() {
               <Link href='/portafolio'>
                 <a>
                   <Btn
-                    text="Ve nuestros proyectos en produccion"
+                    text="Ve nuestros proyectos en producción"
                     colors={{ primary: '#E84AB6', secondary: '#FF0C7F' }}
-                    width='220px'
+                    width='290px'
                     height="50px"
                   />
                 </a>
@@ -152,16 +129,12 @@ export default function Home() {
                   <Btn
                     text="Cotiza tu proyecto"
                     colors={{ primary: '#5BABF4', secondary: '#396EB2' }}
-                    width='220px'
+                    width='290px'
                     height="50px"
                   />
                 </a>
 
               </Link>
-
-
-
-
             </div>
           </article>
           <aside >

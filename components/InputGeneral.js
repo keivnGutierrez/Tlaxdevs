@@ -14,9 +14,9 @@ export default function InputGeneral({
 ) {
     return (
         <>
-            <label  >
+            <label className="noselect" >
                 <input
-                    className="mb-5"
+                    className="mb-5 noselect"
                     placeholder={placeholder}
                     name={name}
                     type={type}
@@ -35,7 +35,7 @@ export default function InputGeneral({
                 {
                     background:withesmoke;
                     height:40px;
-                    width:240px;
+                    width:300px;
                     border-radius:10px;
                     border:solid 1px grey;
                     padding:15px;

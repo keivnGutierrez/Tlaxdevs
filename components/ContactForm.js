@@ -3,6 +3,8 @@ import Btn from './Btn'
 import { useState } from 'react'
 import Loading from './Loading';
 
+import { addPosibleClient } from '../request/client';
+
 export default function ContactForm() {
     const regexIsNumber = new RegExp(/^[0-9\s]*$/);
     const regexIsLetter = new RegExp(/^[a-zA-Z\s]*$/);
@@ -61,10 +63,14 @@ export default function ContactForm() {
         if (validationValues && validationErrors) {
             console.log('todo listo');
             setLoading(true);
-            setTimeout(() => {
+            addPosibleClient({
+                name: dataForm.name.value,
+                mail: dataForm.email.value,
+                phone: dataForm.phone.value
+            }).then(r=>{
                 setLoading(false);
                 setEnvForm(true);
-            }, 1500);
+            })
         }
         if (validationValues === false && validationErrors === true) {
             setError(true)
@@ -80,13 +86,11 @@ export default function ContactForm() {
     return (
         <>
             {
-                loading ?
-                    (
-                        <div style={{height:'450px', display:'flex'}}>
-                            <Loading />
-                        </div>
-
-                    )
+                loading ? (
+                    <div style={{ height: '450px', display: 'flex' }}>
+                        <Loading />
+                    </div>
+                )
                     : (
                         <>
                             {envForm ?
@@ -130,41 +134,23 @@ export default function ContactForm() {
                                             placeholder='Tu numero de email'
                                             type='text'
                                             name="email"
-                                            maxLength={50}
+                                            maxLength={45}
                                             textLabel={dataForm.email.error}
                                             value={dataForm.email.value}
                                             handleChange={handleChange}
 
                                         />
-
-                                        <p>¿Qué typo de proyecto quieres?</p>
-                                        <label>
-                                            <input type='checkbox'></input>
-                                            Web
-                                        </label>
-                                        <label>
-                                            <input type='checkbox'></input>
-                                            Movil
-                                        </label>
-                                        <label>
-                                            <input type='checkbox'></input>
-                                            Otro
-                                        </label>
-                                        <div style={{ display: 'flex', marginTop: '50px' }}>
+                                        <div style={{ display: 'flex' }}>
                                             <label>
                                                 <input type='submit' style={{ display: 'none' }}></input>
-
                                                 <Btn
                                                     text="Enviar"
                                                     colors={{ primary: '#E84AB6', secondary: '#FF0C7F' }}
-                                                    width='220px'
-                                                    height="50px"
+                                                    width='300px'
+                                                    height="45px"
                                                 />
                                             </label>
-
-
                                         </div>
-
                                     </form>
                                 )}
 
@@ -175,7 +161,6 @@ export default function ContactForm() {
 
 
             {error && (<span style={{ color: 'red', margin: 0 }}>Rellena todos los campos</span>)}
-
 
             < style jsx>{`
                 form{

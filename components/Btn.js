@@ -13,7 +13,7 @@ export default function Btn({
     const { primary, secondary } = colors;
     return (
         <>
-            <div className="button">
+            <div className="button noselect">
                 <p style={{margin:'auto'}}>{text}</p>
             </div>
             <style jsx>{`

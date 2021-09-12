@@ -9,22 +9,7 @@ import Footer from '../components/Footer'
 import Link from 'next/link'
 
 
-import { useState, useEffect } from 'react'
-import Loading from '../components/Loading'
-
-
 export default function Portafolio() {
-
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const tiem = setTimeout(() => {
-            setLoading(false)
-        }, 500);
-        return () => {
-            clearTimeout(tiem)
-        }
-    }, [])
 
 
     return (
@@ -44,11 +29,6 @@ export default function Portafolio() {
                 <meta name="copyright" content="Propietario del copyright Tlaxdevs" />
             </Head>
             <Navbar></Navbar>
-            {loading && (
-                <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
-                    <Loading />
-                </div>
-            )}
             <div className={styles.containerWhite}>
                 <main className={styles.main}>
                     <h1 className={styles.titleGeneral}>¡Bienbenido a nuestro  portafolio de trabajos !</h1>
@@ -128,7 +108,7 @@ export default function Portafolio() {
                                 <Btn
                                     text="Cotiza tu proyecto"
                                     colors={{ primary: '#5BABF4', secondary: '#396EB2' }}
-                                    width='220px'
+                                    width='300px'
                                     height="50px"
                                 />
 

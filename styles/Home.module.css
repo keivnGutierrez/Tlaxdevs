@@ -46,19 +46,21 @@
 .mainInfo article {
   width: 100%;
 }
+
 .mainInfo aside {
   width: 100%;
 }
-
 
 .title span {
   color: #a9e950;
   text-decoration: none;
 }
+
 .titleGeneral .secondary {
   color: #ee526e;
   text-decoration: none;
 }
+
 .titleInfo {
   /* background: linear-gradient(135deg, #222a4c, #292d3e); */
   color: #222a4c;
@@ -66,12 +68,14 @@
   font-size: 45px;
   font-weight: bold;
 }
+
 .titleInfoWhite {
   color: white;
   line-height: 1.15;
   font-size: 45px;
   font-weight: bold;
 }
+
 .subTitleInfoWhite {
   color: white;
   line-height: 1.15;
@@ -83,6 +87,7 @@
   color: #374151ea;
   font-size: 20px;
 }
+
 .paragraphInfoWhite {
   color: whitesmoke;
   font-size: 20px;
@@ -92,15 +97,11 @@
   font-weight: bold;
 }
 
-.titleGeneral a:hover,
-.titleGeneral a:focus,
-.titleGeneral a:active {
+.titleGeneral a:hover, .titleGeneral a:focus, .titleGeneral a:active {
   text-decoration: underline;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title a:hover, .title a:focus, .title a:active {
   text-decoration: underline;
 }
 
@@ -111,11 +112,11 @@
   color: white;
 }
 
-.title,
-.description,.titleGeneral {
+.title, .description, .titleGeneral {
   text-align: center;
 }
-.titleGeneral{
+
+.titleGeneral {
   margin: 0;
   line-height: 1.15;
   font-size: 2.5rem;
@@ -133,18 +134,18 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
 .codeInWhite {
   background: rgba(0, 0, 0, 0.734);
   color: #a9e950;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
 .grid {
   display: flex;
   align-items: center;
@@ -166,9 +167,7 @@
   width: 45%;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
+.card:hover, .card:focus, .card:active {
   color: #0070f3;
   border-color: #0070f3;
 }
@@ -200,7 +199,6 @@
   .mainInfo article {
     width: 55%;
   }
-
   .mainInfo aside {
     display: flex;
     grid-gap: 10px;

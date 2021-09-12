@@ -2,11 +2,16 @@ import React from 'react'
 import { COLORS } from '../const/colors'
 import CircleIcon from './icons/CircleIcon'
 import Link from 'next/link';
+
+import Menu from './icons/Menu'
+import MenuNav from './MenuNav';
+import { useNavbar } from '../hooks/useNavbar';
+
 export default function Navbar() {
+    const nav = useNavbar();
     return (
         <>
             <nav>
-
                 <Link href='/'>
                     <a className='container-icons'>
                         Inicio
@@ -18,29 +23,24 @@ export default function Navbar() {
 
 
                 <div className="container-btn">
-                    <Link
+                    {/* <Link
                         href="/cotizaciones"
                     >
-                        <a>
-                            <button >
-                                Contactar
-                            </button>
-
-                        </a>
+                        <a>Contactar</a>
                     </Link>
                     <Link
                         href="/portafolio"
                     >
-                        <a>
-                            <button>
-                                Portafolio
-                            </button>
-
-                        </a>
-                    </Link>
+                        <a>Portafolio</a>
+                    </Link> */}
+                    <label onClick={nav.handleOpen}>
+                        <Menu/>
+                    </label>
                 </div>
-
             </nav>
+            <MenuNav open={nav.status} handleClose={nav.handleClose} />
+
+
             <style jsx>{`
                 nav{
                     position:fixed;
@@ -64,31 +64,25 @@ export default function Navbar() {
                 }
                 nav .container-btn{
                     display:flex;
-                    grid-gap:10px;
+                    grid-gap:40px;
                 }
-               
-                button{
-                    border:none;
-                    border-radius:5px;
-                    padding:5px;
-                    font-weight:600;
-                    background:linear-gradient(to right, #FF0C7F, #FF8524);
-                    /* FF0C7F */
-                    color:whitesmoke;
-                }
+                
                 a{
                     color:white;
                     font-weight:700;
                     cursor:pointer;
                 }
-
-                button:hover{
-                    opacity:.9;
-                    cursor:pointer;
-                }
-                button:active{
+                a:hover{
                     opacity:2;
                     cursor:pointer;
+                    color:${COLORS.secondary};
+                    transition:.5s;
+                }
+                a:active{
+                    opacity:2;
+                    cursor:pointer;
+                    color:${COLORS.green};
+                    transition:2s;
                 }
                 
             `}</style>

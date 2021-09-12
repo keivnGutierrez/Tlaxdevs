@@ -8,20 +8,7 @@ import ContactForm from '../components/ContactForm'
 import { COLORS } from '../const/colors'
 
 
-import { useState, useEffect } from 'react'
-import Loading from '../components/Loading'
-
 export default function Cotizaciones() {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const tiem = setTimeout(() => {
-            setLoading(false)
-        }, 500);
-        return () => {
-            clearTimeout(tiem)
-        }
-    }, [])
 
     return (
         <>
@@ -40,21 +27,16 @@ export default function Cotizaciones() {
                 <meta name="copyright" content="Propietario del copyright Tlaxdevs" />
             </Head>
             <Navbar></Navbar>
-            {loading && (
-                <div style={{ zIndex: '3', position: 'fixed', width: '100%', display: 'flex', margin: 'auto', height: '100vh', background: 'grey', opacity: .6 }} >
-                    <Loading />
-                </div>
-            )}
             <div className={styles.container}>
                 <main className={styles.main}>
                     <h1 className={styles.title}>¡Cuentanos sobre tu <span className="text-logo-green"> proyecto!</span></h1>
                     <p className={styles.description}>
                         <code className={styles.code}>if(bestOption)</code>
                     </p>
-                    <p style={{ fontSize: '18px', fontWeight: '600', color: COLORS.tertiary }} >Llena el formulario y un mienbro del equipo se pondra en contacto contigo</p>
+                    <p style={{ fontSize: '18px', fontWeight: '600', color: COLORS.tertiary }} >Llena el formulario y un miembro del equipo se pondrá en contacto contigo.</p>
 
                     <ContactForm />
-                    <p style={{ fontSize: '12px' }}>Tenemos una politica de 0 span y pribacidad con los datos de nuestros clientes</p>
+                    <p style={{ fontSize: '12px' }}>Tenemos una política de 0 span y privacidad con los datos de nuestros clientes.</p>
 
                 </main>
             </div>
