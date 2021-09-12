@@ -67,7 +67,7 @@ export default function ContactForm() {
                 name: dataForm.name.value,
                 mail: dataForm.email.value,
                 phone: dataForm.phone.value
-            }).then(r=>{
+            }).then(r => {
                 setLoading(false);
                 setEnvForm(true);
             })
@@ -96,7 +96,7 @@ export default function ContactForm() {
                             {envForm ?
                                 (<>
                                     <h1>
-                                        El formulario ah sido enviado correctamente
+                                        El formulario ha sido enviado correctamente
                                     </h1>
                                     <div
                                         onClick={handleClickAgainSend}
@@ -121,7 +121,7 @@ export default function ContactForm() {
                                             handleChange={handleChange}
                                         />
                                         <InputGeneral
-                                            placeholder='Tu numero de telefo'
+                                            placeholder='Tu número de telefono.'
                                             type='tel'
                                             name="phone"
                                             maxLength={11}
@@ -131,8 +131,8 @@ export default function ContactForm() {
 
                                         />
                                         <InputGeneral
-                                            placeholder='Tu numero de email'
-                                            type='text'
+                                            placeholder='email - correo'
+                                            type='email'
                                             name="email"
                                             maxLength={45}
                                             textLabel={dataForm.email.error}
