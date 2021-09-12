@@ -9,7 +9,6 @@ const FromSuscribe = () => {
     const [env, setenv] = useState(false);
     const inputEmail = useInputBasic("email")
     console.log({ inputEmail });
-    const [email, setmail] = useState('');
     const val = inputEmail.info.error == '' && inputEmail.info.value;
 
     const handleSubmitFrom = (e) => {

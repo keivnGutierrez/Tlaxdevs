@@ -14,9 +14,9 @@ export default function InputGeneral({
 ) {
     return (
         <>
-            <label className="noselect" >
+            <label >
                 <input
-                    className="mb-5 noselect"
+                    className="mb-5"
                     placeholder={placeholder}
                     name={name}
                     type={type}
@@ -24,7 +24,7 @@ export default function InputGeneral({
                     value={value}
                     onChange={handleChange}
                 />
-                <span>
+                <span className="noselect" >
                     {textLabel ? textLabel : 'hello word'}
                 </span>
             </label>
